@@ -3,8 +3,8 @@
 Allows you to browes meals by catagory, mark favorites, creates filters for the meals.
 
 ## What I Learned:
-	- [] What "Navigation" and "Screens" Are
-	- [] Pushing & Popping Pages
+	- [x] What "Navigation" and "Screens" Are
+	- [x] Pushing & Popping Pages
 	- [] Tabs & Drawers
 	- [] Passing Data Between Screens
 	
