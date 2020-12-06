@@ -25,9 +25,11 @@ class CategoryItem extends StatelessWidget {
     return InkWell(
       child: Container(
         padding: const EdgeInsets.all(15),
-        child: Text(
-          category.title,
-          style: Theme.of(context).textTheme.headline6,
+        child: Center(
+          child: Text(
+            category.title,
+            style: Theme.of(context).textTheme.headline6,
+          ),
         ),
         decoration: BoxDecoration(
           gradient: LinearGradient(
