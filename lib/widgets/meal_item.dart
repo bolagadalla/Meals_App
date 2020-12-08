@@ -43,10 +43,15 @@ class MealItem extends StatelessWidget {
 
   // Transition to the MealDetailsScreen
   void _selectMeal(BuildContext context) {
-    Navigator.of(context).pushNamed(
+    // The "then" keyward is what happens WHEN this screen has POPPED out of the screen view
+    Navigator.of(context)
+        .pushNamed(
       MealDetailsScreen.screenRouteName,
       arguments: meal,
-    );
+    )
+        .then((value) {
+      if (value != null) print(value);
+    });
   }
 
   @override

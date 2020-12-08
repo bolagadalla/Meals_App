@@ -6,7 +6,8 @@ Allows you to browes meals by catagory, mark favorites, creates filters for the 
 	- [x] What "Navigation" and "Screens" Are
 	- [x] Pushing & Popping Pages
 	- [x] Tabs & Drawers
-	- [] Passing Data Between Screens
+	- [x] Passing Data Between Screens
+	- [ ] Creating a filter screen
 	
 ## How The App Looks
 <p align="center">

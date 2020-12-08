@@ -90,6 +90,14 @@ class MealDetailsScreen extends StatelessWidget {
           ],
         ),
       ),
+      // floatingActionButton: FloatingActionButton(
+      //   child: Icon(Icons.delete),
+      //   onPressed: () {
+      //     // Removes a widget/screen. When passing in an argument,
+      //     // we can use that argument to delete a widget off the screen
+      //     Navigator.of(context).pop(meal.id);
+      //   },
+      // ),
     );
   }
 }

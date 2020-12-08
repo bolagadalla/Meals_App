@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import './screens/404_screen.dart';
-import './screens/categories_screen.dart';
 import './screens/screen_routes.dart';
 
 void main() {

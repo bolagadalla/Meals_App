@@ -4,8 +4,7 @@ import '../screens/filter_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   void _goScreen(BuildContext context, String routeName) {
-    Navigator.of(context).pop();
-    Navigator.of(context).pushNamed(routeName);
+    Navigator.of(context).pushReplacementNamed(routeName);
   }
 
   Widget _drawerButtonItem(
