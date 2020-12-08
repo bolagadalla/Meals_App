@@ -5,6 +5,11 @@ import '../models/meal.dart';
 class MealDetailsScreen extends StatelessWidget {
   static const String screenRouteName = "/meal-details";
 
+  final Function toggleFavorite;
+  final Function isMealFavorite;
+
+  MealDetailsScreen(this.toggleFavorite, this.isMealFavorite);
+
   // Returns a contianer with stylized text that would act as a heading
   Widget sectionHeader(BuildContext context, String headingText) {
     return Container(
@@ -90,14 +95,17 @@ class MealDetailsScreen extends StatelessWidget {
           ],
         ),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   child: Icon(Icons.delete),
-      //   onPressed: () {
-      //     // Removes a widget/screen. When passing in an argument,
-      //     // we can use that argument to delete a widget off the screen
-      //     Navigator.of(context).pop(meal.id);
-      //   },
-      // ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          isMealFavorite(meal.id) ? Icons.star : Icons.star_border,
+        ),
+        onPressed: () => toggleFavorite(meal.id),
+        // () {
+        // // Removes a widget/screen. When passing in an argument,
+        // // we can use that argument to delete a widget off the screen
+        // Navigator.of(context).pop(meal.id);
+        // },
+      ),
     );
   }
 }
