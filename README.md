@@ -1,4 +1,4 @@
-# Personal Expenses App
+# Meals App
 
 Allows you to browes meals by catagory, mark favorites, creates filters for the meals.
 
